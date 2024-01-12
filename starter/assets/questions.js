@@ -68,5 +68,45 @@ const questions = [
     question: 'What is the defult value of the position property',
     choices: ['fixed', 'absolute', 'relative', 'static'],
     answer: 'static',
-  }
+  },
+  // JavaScript Questions
+  {
+    question: 'Inside which HTML element do we put the JavaScript?',
+    choices: ['<js>', '<script>', '<javascript>', '<scripting>'],
+    answer: '<script>',
+  },
+  {
+    question: 'How do you write "Hello World" in an alert box?',
+    choices: [
+      'alert("Hello World");',
+      'msgBox("Hello World");',
+      'msg("Hello World");',
+      'alertBox("Hello World");',
+    ],
+    answer: 'alert("Hello World");',
+  },
+  {
+    question: 'How do you create a function in JavaScript?',
+    choices: [
+      'function = myFunction()',
+      'function myFunction()',
+      'function:myFunction()',
+    ],
+    answer: 'function myFunction()',
+  },
+  {
+    question: 'How do you call a function named "myFunction"?',
+    choices: [
+      'call myFunction()',
+      'call function myFunction()',
+      'myFunction()',
+      'function myFunction()',
+    ],
+    answer: 'myFunction()',
+  },
+  {
+    question: 'How to write an IF statement in JavaScript?',
+    choices: ['if i = 5 then', 'if (i == 5)', 'if i == 5 then', 'if i = 5'],
+    answer: 'if (i == 5)',
+  },
 ];
