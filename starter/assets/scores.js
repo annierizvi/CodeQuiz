@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayHighScores() {
   const highScoresList = document.getElementById('highscores');
   const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-
+  // Sort scores in descending order
   highScores.sort((a, b) => b.score - a.score);
 
   highScores.forEach((score) => {
@@ -18,5 +18,6 @@ function displayHighScores() {
 
 function clearHighScores() {
   localStorage.removeItem('highScores');
+  // Clear the list on the page
   document.getElementById('highscores').innerHTML = '';
 }
