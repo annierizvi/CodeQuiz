@@ -43,7 +43,8 @@ const questions = [
     answer: 'Cascading Style Sheets',
   },
   {
-    question: 'Which property is used to change the background color of an element?',
+    question:
+      'Which property is used to change the background color of an element?',
     choices: ['bgcolor', 'color', 'background-color', 'background'],
     answer: 'background-color',
   },
