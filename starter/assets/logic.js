@@ -1,10 +1,17 @@
+// Tracks the current question index in the quiz
 let currentQuestionIndex = 0;
+// Reference for the quiz timer interval
 let timer;
+// Tracks the remaining time for the quiz
 let timeLeft;
 
+// Starts the quiz
 function startQuiz() {
+  // Sets the total time based on the number of questions
   timeLeft = questions.length * 15;
+  // Hides the start screen
   document.getElementById('start-screen').classList.add('hide');
+  // Displays the questions section
   document.getElementById('questions').classList.remove('hide');
 
   timer = setInterval(updateTimer, 1000);
@@ -20,6 +27,7 @@ function updateTimer() {
   }
 }
 
+// Displays the current question and its choices
 function displayQuestion() {
   let question = questions[currentQuestionIndex];
   document.getElementById('question-title').textContent = question.question;
@@ -35,22 +43,26 @@ function displayQuestion() {
   });
 }
 
+// Handles the selection of an answer
 function selectAnswer() {
   let selectedAnswer = this.textContent;
   let correctAnswer = questions[currentQuestionIndex].answer;
 
   if (selectedAnswer !== correctAnswer) {
+    // Deducts 5 seconds for a wrong answer
     timeLeft = Math.max(timeLeft - 5, 0);
   }
   currentQuestionIndex++;
+  // Ends the quiz if all questions are answered or time runs out
   if (currentQuestionIndex === questions.length || timeLeft <= 0) {
     endQuiz();
   } else {
     displayQuestion();
   }
 }
-
+// Ends the quiz
 function endQuiz() {
+  // Stops the timer
   clearInterval(timer);
   document.getElementById('questions').classList.add('hide');
   document.getElementById('end-screen').classList.remove('hide');
