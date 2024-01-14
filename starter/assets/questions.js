@@ -2,7 +2,7 @@ const questions = [
   // HTML Questions
   {
     question: 'What does HTML stand for?',
-    answers: [
+    choices: [
       'Hyper Trainer Marking Language',
       'Hyper Text Markup Language',
       'Hyperlinks and Text Markup Language',
@@ -13,23 +13,23 @@ const questions = [
   {
     question:
       'Which of the following HTML elements is used for creating an unordered list?',
-    answers: ['<ui>', '<i>', '<ul>', '<list>'],
+    choices: ['<ui>', '<i>', '<ul>', '<list>'],
     answer: '<ul>',
   },
   {
     question: 'Which HTML element is used to define a paragraph?',
-    answers: ['<pg>', '<paragraph>', '<p>', '<text>'],
-    correct: 'paragraph',
+    choices: ['<pg>', '<paragraph>', '<p>', '<text>'],
+    answer: 'paragraph',
   },
   {
     question: 'What is the purpose of the <div> tag in HTML?',
-    answers: [
+    choices: [
       'For creating titles',
       'For creating a division or a section',
       'For adding a line break',
       'For emphasizing text',
     ],
-    correct: 'For creating a devision or a section',
+    answer: 'For creating a devision or a section',
   },
   // CSS Questions
   {
@@ -43,8 +43,7 @@ const questions = [
     answer: 'Cascading Style Sheets',
   },
   {
-    question:
-      'Which property is used to change the background color of an element?',
+    question: 'Which property is used to change the background color of an element?',
     choices: ['bgcolor', 'color', 'background-color', 'background'],
     answer: 'background-color',
   },
