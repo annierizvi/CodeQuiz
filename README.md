@@ -34,6 +34,14 @@ This Coding Quiz Challenge is a web-based application that tests users on their 
 - CSS
 - JavaScript
 
+## Project Structure
+- `index.html`: Main page of the quiz.
+- `highscores.html`: High scores display page.
+- `assets/css/styles.css`: Stylesheet for the quiz.
+- `assets/js/logic.js`: JavaScript for quiz logic.
+- `assets/js/questions.js`: Contains the quiz questions.
+- `assets/js/scores.js`: Handles high score logic.
+
 ## Screenshots
 
 ![code quiz questions](image.png)
