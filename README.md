@@ -33,3 +33,11 @@ This Coding Quiz Challenge is a web-based application that tests users on their 
 - HTML
 - CSS
 - JavaScript
+
+## Screenshots
+
+![code quiz questions](image.png)
+![total score](image-1.png)
+![score submitted successfully](image-2.png)
+![message if no initials are added to submit input box](image-3.png)
+![highscores](image-4.png)
