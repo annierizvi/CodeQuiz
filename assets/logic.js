@@ -49,8 +49,11 @@ function selectAnswer() {
   let correctAnswer = questions[currentQuestionIndex].answer;
 
   if (selectedAnswer !== correctAnswer) {
+    document.getElementById('correct-sound').play();
     // Deducts 5 seconds for a wrong answer
     timeLeft = Math.max(timeLeft - 5, 0);
+  } else {
+    document.getElementById('incorrect-sound').play();
   }
   currentQuestionIndex++;
   // Ends the quiz if all questions are answered or time runs out
